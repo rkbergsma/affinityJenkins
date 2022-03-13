@@ -44,6 +44,7 @@ def split_site_domain(site_list):
     for site in site_list:
         (new_site_domain) = site.split(',')
         site_domain_list.append(new_site_domain)
+    return site_domain_list
 
 def do_nothing():
     num_list = []
@@ -56,10 +57,3 @@ def fibonacci(number):
         return number
     result = fibonacci(number - 1) + fibonacci(number - 2)
     return result
-
-def sum_list_long_way(input):
-    sum = 0
-    for item in list:
-        if isinstance(item, int):
-            sum = sum + item
-    return sum
